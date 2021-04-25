@@ -1,0 +1,52 @@
+.test {
+  color: #000;
+}
+
+.test a {
+  background-color: #ffffff;
+}
+
+.btn__first {
+  border: 1px solid #000;
+  width: 160px;
+  display: block;
+  padding: 20px auto;
+  border-bottom: 3px solid #eee;
+  text-align: center;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+.btn__first:hover {
+  background-color: #eee;
+  transition: 0.3s;
+  transform: translate3d(0, 4px, 0);
+  cursor: pointer;
+}
+
+.top__first {
+  background-color: #8e8e8e;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.top-content {
+  height: 1000px;
+  background: linear-gradient(#e66465, #9297e5);
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #999;
+  opacity: 8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
