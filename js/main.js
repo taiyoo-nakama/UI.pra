@@ -36,3 +36,28 @@ target.addEventListener('click', () => {
   const nev = document.getElementById("nav");
   nav.classList.toggle('in');
 });
+
+const openBtn = document.getElementById('openBtn');
+const closeBtn = document.getElementById('closeBtn');
+const model = document.getElementById('model');
+openBtn.addEventListener('click',() => {
+  model.style.display = 'block';
+})
+closeBtn.addEventListener('click',() => {
+  model.style.display = 'none';
+})
+window.addEventListener('click', (e) => {
+  if (!e.target.closest('.model__content-inner') && e.targer.id!== "openBtn") {
+    model.style.display = 'none';
+  }
+});
+
+const menu3 = document.getElementsByClassName("menu3");
+for (let i = 0; i < menu3.length; i++){
+  menu3[i].addEventListener("click",toggle);
+}
+function toggle() {
+  const content = this.nextElementSibling;
+  this.classList.toggle("is-active");
+  content.classList.toggle("is-open");
+}
