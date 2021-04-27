@@ -284,7 +284,8 @@ html {
   height: 80%;
 }
 
-.parallax-bg, .scrollbox {
+.parallax-bg,
+.scrollbox {
   color: #fff;
   display: flex;
   font-size: 48px;
